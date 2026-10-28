@@ -30,4 +30,3 @@ def test_create_ticket_rejects_blank_description():
             title="Unable to connect to VPN",
             description="   ",
         )
-        

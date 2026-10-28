@@ -1,4 +1,8 @@
-import sys
+from tickets import create_ticket
 
-print("Support Desk development environment")
-print("Python executable:", sys.executable)
+ticket = create_ticket(
+    title="  Unable to connect to VPN  ",
+    description="  The connection fails from home.  ",
+)
+
+print(ticket)

@@ -5,5 +5,8 @@
 __pycache__/
 *.pyc
 
+# Test cache
+.pytest_cache/
+
 # Local configuration and secrets
 .env

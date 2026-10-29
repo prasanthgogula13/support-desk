@@ -1,8 +1,9 @@
-from tickets import create_ticket
+from fastapi import FastAPI
 
-ticket = create_ticket(
-    title="  Unable to connect to VPN  ",
-    description="  The connection fails from home.  ",
-)
 
-print(ticket)
+app = FastAPI(title="Support Desk API")
+
+
+@app.get("/health")
+def health_check() -> dict[str, str]:
+    return {"status": "ok"}

@@ -1,4 +1,4 @@
-def create_ticket(title: str, description: str) -> dict:
+def create_ticket(title: str, description: str) -> dict[str, str]:
     title = title.strip()
     description = description.strip()
 

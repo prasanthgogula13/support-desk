@@ -33,6 +33,7 @@ Available URLs:
 
 - Health check: http://127.0.0.1:8000/health
 - Interactive API documentation: http://127.0.0.1:8000/docs
+
 ## API endpoints
 
 ### Create a ticket
@@ -64,6 +65,7 @@ Successful response: `201 Created`
 Missing, blank, or incorrectly typed fields return `422 Unprocessable Content`.
 
 Tickets are not stored yet; database persistence will be added in a later ticket.
+
 ## Run the tests
 
 ```powershell
